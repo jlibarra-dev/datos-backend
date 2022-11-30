@@ -80,9 +80,10 @@ class PredictionModel:
         if(dataIndex==True):
             print(data)
 
+        df.to_csv('datos_aleatorios.csv', index=False)
         return df
 
 #prediction = PredictionModel().make_predictions(PredictionModel().generate_random_data(1))
 #print(prediction)
 
-PredictionModel().generate_random_data(10, dataIndex=True)
+PredictionModel().generate_random_data(20, dataIndex=False)
